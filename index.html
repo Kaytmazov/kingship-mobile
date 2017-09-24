@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="theme-color" content="#2196f3">
+    <title>KingShip</title>
+    <link rel="stylesheet" href="css/framework7.material.min.css">
+    <link rel="stylesheet" href="css/framework7.material.colors.min.css">
+    <link rel="stylesheet" href="css/material-icons.css">
+    <link href="http://fonts.googleapis.com/css?family=Roboto:400,300,500,700" rel="stylesheet" type="text/css">
+    <!-- Свои стили -->
+    <link rel="stylesheet" href="css/my-app.css">
+    <link rel="icon" href="img/icon.png">
+  </head>
+  <body>
+    <div class="statusbar-overlay"></div>
+    <div class="panel-overlay"></div>
+    <div class="panel panel-left panel-cover">
+      <div class="view navbar-fixed">
+        <div class="pages">
+          <div data-page="panel-left" class="page">
+            <div class="navbar">
+              <div class="navbar-inner">
+                <div class="center">Меню</div>
+              </div>
+            </div>
+            <div class="page-content">
+              <div class="content-block-title panel-left-logo"><img src="img/logo.png" width="173" height="50" alt="Логотип"></div>
+              <div class="list-block">
+                <ul>
+                  <li>
+                    <a href="#" class="item-link close-panel">
+                      <div class="item-content">
+                        <div class="item-media">
+                          <i class="icon icon-f7"></i>
+                        </div>
+                        <div class="item-inner">
+                          <div class="item-title">Разместить задание</div>
+                        </div>
+                      </div>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="projects-list.html" class="item-link close-panel">
+                      <div class="item-content">
+                        <div class="item-media">
+                          <i class="icon icon-f7"></i>
+                        </div>
+                        <div class="item-inner">
+                          <div class="item-title">Проекты</div>
+                        </div>
+                      </div>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="performers.html" class="item-link close-panel">
+                      <div class="item-content">
+                        <div class="item-media">
+                          <i class="icon icon-f7"></i>
+                        </div>
+                        <div class="item-inner">
+                          <div class="item-title">Исполнители</div>
+                        </div>
+                      </div>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="item-link close-panel">
+                      <div class="item-content">
+                        <div class="item-media">
+                          <i class="icon icon-f7"></i>
+                        </div>
+                        <div class="item-inner">
+                          <div class="item-title">Работодатели</div>
+                        </div>
+                      </div>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="my-settings.html" class="item-link close-panel">
+                      <div class="item-content">
+                        <div class="item-media">
+                          <i class="icon icon-f7"></i>
+                        </div>
+                        <div class="item-inner">
+                          <div class="item-title">Мои настройки</div>
+                        </div>
+                      </div>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="my-projects.html" class="item-link close-panel">
+                      <div class="item-content">
+                        <div class="item-media">
+                          <i class="icon icon-f7"></i>
+                        </div>
+                        <div class="item-inner">
+                          <div class="item-title">Мои проекты</div>
+                        </div>
+                      </div>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="my-score.html" class="item-link close-panel">
+                      <div class="item-content">
+                        <div class="item-media">
+                          <i class="icon icon-f7"></i>
+                        </div>
+                        <div class="item-inner">
+                          <div class="item-title">Мой счет: 746.40 руб.</div>
+                        </div>
+                      </div>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="my-suggestions.html" class="item-link close-panel">
+                      <div class="item-content">
+                        <div class="item-media">
+                          <i class="icon icon-f7"></i>
+                        </div>
+                        <div class="item-inner">
+                          <div class="item-title">Мои предложения</div>
+                        </div>
+                      </div>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="item-link close-panel">
+                      <div class="item-content">
+                        <div class="item-media">
+                          <i class="icon icon-f7"></i>
+                        </div>
+                        <div class="item-inner">
+                          <div class="item-title">SMS-подписка</div>
+                        </div>
+                      </div>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="contacts.html" class="item-link close-panel">
+                      <div class="item-content">
+                        <div class="item-media">
+                          <i class="icon icon-f7"></i>
+                        </div>
+                        <div class="item-inner">
+                          <div class="item-title">Контакты</div>
+                        </div>
+                      </div>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Views -->
+    <div class="views">
+      <!-- Your main view, should have "view-main" class -->
+      <div class="view view-main">
+        <!-- Pages container, because we use fixed navbar and toolbar, it has additional appropriate classes-->
+        <div class="pages navbar-fixed">
+
+          <div data-page="index" class="page">
+            <div class="page-content no-navbar">
+              <div class="login-screen-logo">
+                <img src="img/logo.png" width="173" height="50" alt="Логотип">
+              </div>
+              <div class="login-promo">
+                <h2>Сэкономьте свое время и бюджет за счет проверенного сервиса услуг</h2>
+              </div>
+              <div class="content-block">
+                <p class="login-text">Some text about login information. <br>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                <h1 class="page-title">Вход</h1>
+                <p class="signup-text">Еще не с нами? <a href="sign-up.html">Зарегистрируйтесь</a></p>
+              </div>
+              <form>
+                <div class="list-block inputs-list">
+                  <ul>
+                    <li class="item-content">
+                      <div class="item-inner"> 
+                        <div class="item-title label">Телефон</div>
+                        <div class="item-input">
+                          <input type="tel" name="phone" placeholder="Ваш телефон"/>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="item-content">
+                      <div class="item-inner"> 
+                        <div class="item-title label">Пароль</div>
+                        <div class="item-input">
+                          <input type="password" name="password" placeholder="Ваш пароль"/>
+                        </div>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="item-content text-center">
+                        <div class="item-inner switch-with-text"> 
+                          <div class="item-input">
+                            <label class="label-switch">
+                              <input type="checkbox" name="switch" checked/>
+                              <div class="checkbox"></div>
+                            </label>
+                          </div>
+                          <div class="item-title label">Запомнить пароль</div>
+                        </div>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="content-block">
+                        <a href="projects-list.html" class="button button-big button-raised">Войти</a>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </form>
+              <div class="forgot-link content-block">
+                <a href="forgot.html">Забыли пароль?</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Framework7 Library JS -->
+    <script type="text/javascript" src="js/framework7.min.js"></script>
+    <!-- Yandex Maps Api -->
+    <script src="//api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+    <!-- Свои скрипты -->
+    <script type="text/javascript" src="js/my-app.js"></script>
+  </body>
+</html>
