@@ -73,13 +73,13 @@ form .material-icons {
   padding-bottom: 16px;
 }
 
+.panel-left .material-icons {
+  color: #2196f3;
+}
+
 .signup-text {
   margin-top: 0;
   text-align: center;
-}
-
-.signup-text a {
-  color: #212121;
 }
 
 .no-border-list ul::before {
@@ -110,6 +110,12 @@ form .material-icons {
 .switch-with-text .item-title.label {
   font-size: 13px;
   color: rgb(33, 33, 33);
+}
+
+.project-title {
+  font-size: 16px;
+  font-weight: 400;
+  color: #212121;
 }
 
 .projects-icon {
@@ -194,3 +200,13 @@ form .material-icons {
   display: block;
   font-size: 12px;
 }
+
+.infinite-scroll-preloader {
+  margin-top:-20px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+.infinite-scroll-preloader .preloader {
+  width:34px;
+  height:34px;
+}     
