@@ -142,3 +142,55 @@ form .material-icons {
 .score-value {
   padding-bottom: 20px;
 }
+
+.ks-carousel-slider .swiper-slide {
+  font-weight: 300;
+  font-size: 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+.ks-carousel-slider .swiper-slide {
+  box-sizing: border-box;
+  color: #fff;
+  background-size: cover;
+}
+
+.page[data-page="add-project-cat"] .swiper-container {
+  margin: 0px 0 35px;
+  height: 150px;
+}
+
+.ks-card-header-pic .card-header {
+  height: 200px;
+  background-size: cover;
+  background-position: center;
+}
+
+.cat-list .card-footer a {
+  color: #3c3c3c;
+}
+
+.subcat-btns .button {
+  height: auto;
+  margin-bottom: 20px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  font-size: 15px;
+  line-height: 2;
+}
+
+.subcat-btns .button span {
+  display: block;
+  font-size: 12px;
+}
