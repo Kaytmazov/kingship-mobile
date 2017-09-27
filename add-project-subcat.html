@@ -10,10 +10,171 @@
   <div class="page-content">
     <div class="content-block">
       <div class="subcat-btns">
-        <a href="#" class="button button-big button-fill button-raised">Разовый вызов <span>40р / 3 км, далее 1км 10 руб</span></a>
-        <a href="#" class="button button-big button-fill button-raised">Вызвать курьера на весь день <span>800 рублей / 10 заказов, с 11:00 до 20:00</span></a>
-        <a href="#" class="button button-big button-fill button-raised">Вызвать курьера на всю ночь <span>800 рублей / 10 заказов, с 20:00 до 03:00</span></a>
+        <a href="project.html" class="button button-big button-fill button-raised">Разовый вызов <span>40р / 3 км, далее 1км 10 руб</span></a>
+        <a href="project.html" class="button button-big button-fill button-raised">Вызвать курьера на весь день <span>800 рублей / 10 заказов, с 11:00 до 20:00</span></a>
+        <a href="project.html" class="button button-big button-fill button-raised">Вызвать курьера на всю ночь <span>800 рублей / 10 заказов, с 20:00 до 03:00</span></a>
       </div>
     </div>
+
+    <div class="list-block accordion-list">
+      <div class="accordion-item">
+        <a href="#" class="item-link item-content">
+          <div class="item-inner"> 
+            <div class="item-title">Аккордион</div>
+          </div>
+        </a>
+        <div class="accordion-item-content">
+          <div class="content-block">
+            <p><a href="#" class="button button-big button-fill button-raised">Отправить заявку</a></p>
+          </div>
+          <!-- Редактировать заявку -->
+          <div class="application-edit list-block accordion-list">
+            <div class="accordion-item accordion-item-expanded">
+              <a href="#" class="item-link item-content">
+                <div class="item-inner"> 
+                  <div class="item-title">Редактировать заявку</div>
+                </div>
+              </a>
+              <div class="accordion-item-content">
+                <div class="content-block">
+                  <div class="item-input">
+                    <input type="text" placeholder="Выберите категорию" readonly="readonly" id="ks-picker-describe"/>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div><!-- /Редактировать заявку -->
+          <form class="list-block inputs-list">
+            <ul>
+              <li>
+                <div class="item-content">
+                  <div class="item-media"><i class="icon material-icons">person_outline</i></div>
+                  <div class="item-inner"> 
+                    <div class="item-title label">Название проекта</div>
+                    <div class="item-input">
+                      <input type="text" placeholder="Введите название"/>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="align-top">
+                <div class="item-content">
+                  <div class="item-media"><i class="icon material-icons">chat_bubble_outline</i></div>
+                  <div class="item-inner"> 
+                    <div class="item-title label">Описание проекта</div>
+                    <div class="item-input">
+                      <textarea class="resizable" placeholder="Введите описание"></textarea>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="item-content">
+                  <div class="item-media"><i class="icon material-icons">location_on</i></div>
+                  <div class="item-inner"> 
+                    <div class="item-title floating-label">Откуда</div>
+                    <div class="item-input">
+                      <input type="text" placeholder="Откуда"/>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="item-content">
+                  <div class="item-media"><i class="icon material-icons">pin_drop</i></div>
+                  <div class="item-inner"> 
+                    <div class="item-title floating-label">Куда</div>
+                    <div class="item-input">
+                      <input type="text" placeholder="Куда"/>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="form-buttons">
+                <div class="content-block">
+                  <p class="buttons-row">
+                    <a href="#" class="button button-big button-fill">Добавить точку</a>
+                    <a href="#" class="button button-big button-fill color-green">Проложить маршрут</a>
+                  </p>
+                </div>
+              </li>
+              <li>
+                <div class="item-content">
+                  <div class="item-media"><i class="icon material-icons">all_inclusive</i></div>
+                  <div class="item-inner"> 
+                    <div class="item-title label">Расстояние</div>
+                    <div class="item-input no-border-after">
+                      <input type="text" placeholder="Расстояние" value="13.362 km" readonly="readonly"/>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="content-block">
+                  <div id="map"></div>
+                </div>
+              </li>
+              <li>
+                <div class="content-block-title">Когда нужно приступить к заданию</div>
+                <div class="content-block">
+                  <p class="buttons-row">
+                    <a href="#" class="button button-big button-fill button-raised">Сейчас</a>
+                    <a href="#" class="button button-big button-fill button-raised">Через 16 минут</a>
+                  </p>
+                  <p class="buttons-row">
+                    <a href="#" class="button button-big button-fill button-raised">Через 30 минут</a>
+                    <a href="#" class="button button-big button-fill button-raised">Через 1 час</a>
+                  </p>
+                </div>
+              </li>
+              <li>
+                <div class="content-block-title"><i class="icon material-icons">today</i> или выберите дату</div>
+                <div class="content-block">
+                  <div class="item-input">
+                    <input type="text" placeholder="Date Time" readonly="readonly" id="ks-picker-date"/>
+                  </div>
+                </div>
+                <div id="ks-picker-date-container"></div>
+              </li>
+              <li>
+                <div class="item-content">
+                  <div class="item-media"><i class="icon material-icons">cloud</i></div>
+                  <div class="item-inner"> 
+                    <div class="item-title floating-label">Вес груза</div>
+                    <div class="item-input">
+                      <input type="text" placeholder="Вес груза"/>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="item-content">
+                  <div class="item-media"><i class="icon material-icons">check</i></div>
+                  <div class="item-inner"> 
+                    <div class="item-title label">Требуется погрузка/выгрузка</div>
+                    <div class="item-input">
+                      <label class="label-switch">
+                        <input type="checkbox"/>
+                        <div class="checkbox"></div>
+                      </label>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="content-block">
+                  <p><a href="#" class="button button-big button-fill button-raised">Отправить заявку</a></p>
+                </div>
+              </li>
+            </ul>
+            <div class="content-block">
+              <p><a href="#" class="button button-raised notification-subcat">Уведомление</a></p>
+            </div>
+          </form>
+
+        </div>
+      </div>
+    </div>
+
   </div>
 </div>

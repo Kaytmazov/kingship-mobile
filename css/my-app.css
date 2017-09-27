@@ -14,6 +14,12 @@ form .material-icons {
   color: #757575;
 }
 
+.no-border-before::before, 
+.no-border-after::after {
+  display: none!important;
+}
+
+
 .text-center {
   text-align: center;
 }
@@ -80,14 +86,6 @@ form .material-icons {
 .signup-text {
   margin-top: 0;
   text-align: center;
-}
-
-.no-border-list ul::before {
-  display: none;
-}
-
-.no-border-after ul::after {
-  display: none;
 }
 
 .button-row {
@@ -202,11 +200,40 @@ form .material-icons {
 }
 
 .infinite-scroll-preloader {
-  margin-top:-20px;
+  margin-top: -20px;
   margin-bottom: 10px;
   text-align: center;
 }
+
 .infinite-scroll-preloader .preloader {
-  width:34px;
-  height:34px;
-}     
+  width: 34px;
+  height: 34px;
+}
+
+.list-block .application-edit.accordion-list {
+  position: relative;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.application-edit::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: auto;
+  right: auto;
+  height: 1px;
+  width: 100%;
+  background-color: rgba(0,0,0,.12);
+  display: block;
+  z-index: 15;
+  -webkit-transform-origin: 50% 0;
+  transform-origin: 50% 0;
+  -webkit-transform: scaleY(.5);
+  transform: scaleY(.5);
+}
+
+.form-buttons {
+  margin: 40px 0;
+}
